@@ -6236,6 +6236,7 @@ package android.content {
     field public static final int FLAG_ACTIVITY_REORDER_TO_FRONT = 131072; // 0x20000
     field public static final int FLAG_ACTIVITY_RESET_TASK_IF_NEEDED = 2097152; // 0x200000
     field public static final int FLAG_ACTIVITY_SINGLE_TOP = 536870912; // 0x20000000
+    field public static final int FLAG_ACTIVITY_SPLIT_VIEW = 8192; // 0x2000
     field public static final int FLAG_ACTIVITY_TASK_ON_HOME = 16384; // 0x4000
     field public static final int FLAG_DEBUG_LOG_RESOLUTION = 8; // 0x8
     field public static final int FLAG_EXCLUDE_STOPPED_PACKAGES = 16; // 0x10
@@ -10129,7 +10130,6 @@ package android.hardware {
     method public int getJpegQuality();
     method public int getJpegThumbnailQuality();
     method public android.hardware.Camera.Size getJpegThumbnailSize();
-    method public java.lang.String getPowerMode();
     method public int getMaxExposureCompensation();
     method public int getMaxNumDetectedFaces();
     method public int getMaxNumFocusAreas();
@@ -10139,6 +10139,7 @@ package android.hardware {
     method public int getMinExposureCompensation();
     method public int getPictureFormat();
     method public android.hardware.Camera.Size getPictureSize();
+    method public java.lang.String getPowerMode();
     method public android.hardware.Camera.Size getPreferredPreviewSizeForVideo();
     method public int getPreviewFormat();
     method public void getPreviewFpsRange(int[]);
